@@ -15,7 +15,7 @@ deploy:
   bucker_path: docker
   on:
     branch: master
-  aws_key_id: $AWS_ACCESS_KEY
+  aws_key_id:
+    secure: $AWS_ACCESS_KEY
   secret_access_key:
     secure: $AWS_SECRET_KEY
-    
