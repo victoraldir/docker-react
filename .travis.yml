@@ -1,7 +1,7 @@
 --- 
 sudo: required
 before_instal: 
-  - "docker build -t victoraldir/docker-react -f Dockerfile.dev ."
+  - "docker build -t victoraldir/docker-react -f Dockerfile ."
 script: 
   - "docker run -e CI=true victoraldir/docker-react npm run test -- --coverage"
 services: 
